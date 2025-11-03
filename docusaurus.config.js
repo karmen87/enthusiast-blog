@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Enthusiast',
+  tagline: 'Open-source AI framework for e-commerce workflows',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -27,8 +27,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'karmen87', // Usually your GitHub org/user name.
+  projectName: 'enthusiast-blog', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -47,10 +47,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/karmen87/enthusiast-blog/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -58,10 +57,9 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/karmen87/enthusiast-blog/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -83,21 +81,17 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        title: 'Enthusiast',
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/upsidelab/enthusiast',
             label: 'GitHub',
             position: 'right',
           },
@@ -110,43 +104,51 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introduction',
                 to: '/docs/intro',
               },
+              {
+                label: 'Quick Start',
+                to: '/docs/enthusiast-guide/quick-start',
+              },
             ],
           },
           {
-            title: 'Community',
+            title: 'Connect',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/karmen-kardum/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/karmen87',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Portfolio',
+                href: 'https://karmen87.github.io/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Resources',
             items: [
               {
                 label: 'Blog',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Enthusiast GitHub',
+                href: 'https://github.com/upsidelab/enthusiast',
+              },
+              {
+                label: 'Official Docs',
+                href: 'https://upsidelab.io/tools/enthusiast/docs/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Karmen Kardum. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

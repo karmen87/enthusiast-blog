@@ -2,46 +2,49 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to Enthusiast
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**Enthusiast** is an open-source, production-oriented agentic AI framework built specifically for **e-commerce workflows**.
 
-## Getting Started
+If you want to attach RAG-powered agents to product catalogs, customer support flows, or content pipelines — with the option to self-host everything — **Enthusiast is worth exploring.**
 
-Get started by **creating a new site**.
+## What is Enthusiast?
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Enthusiast combines:
+- **Retrieval-Augmented Generation (RAG)** with vector search capabilities
+- **Layered validation** to reduce AI hallucinations
+- **Pre-built e-commerce connectors** for PIM/CMS/Shopify integration
+- Support for both **cloud-based and self-hosted** language models
+- **Python/Django backend** with React frontend
 
-### What you'll need
+## Key Features
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### RAG + Vector Index
+Build a vectorized index of product pages, docs, and PIM exports, then answer free-form questions with contextually retrieved evidence.
 
-## Generate a new site
+### Validation & Evaluation
+Layered scoring and optional LLM-based validators help detect inconsistencies and reduce hallucinations.
 
-Generate a new Docusaurus site using the **classic template**.
+### E-Commerce Connectors
+Pre-built connectors simplify ingest from common sources (PIM/CMS/Shopify/others) to get real product data into the index faster.
 
-The classic template will automatically be added to your project after you run the command:
+### Flexible Model Integrations
+Use OpenAI-hosted models or self-hosted LLMs (Mistral, LLaMA, Deepseek, etc.) depending on security and cost constraints.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Common Use Cases
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- Knowledge bases for sales & support
+- Semi-automated customer support
+- Content generation (ads, product descriptions)
+- Recommendation flows
+- Content moderation
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Get Started
 
-## Start your site
+Ready to dive in? Check out the [Quick Start guide](./enthusiast-guide/quick-start) to get a local instance running in under 5 minutes.
 
-Run the development server:
+## Resources
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- [Official Website](https://upsidelab.io/tools/enthusiast)
+- [Documentation](https://upsidelab.io/tools/enthusiast/docs/)
+- [GitHub Repository](https://github.com/upsidelab/enthusiast) (MIT License)
