@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:dev.to)",
-      "WebFetch(domain:docusaurus.io)"
+      "WebFetch(domain:docusaurus.io)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

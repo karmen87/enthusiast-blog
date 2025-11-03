@@ -9,24 +9,28 @@ import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 function HomepageHeader() {
-    const {siteConfig} = useDocusaurusContext();
-    const logoUrl = useBaseUrl('/img/logo.png');
-    return (
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          {/* Add logo */}
-          <div className={styles.heroLogo}>
-            <img
-              src={logoUrl}
-              alt="Enthusiast Logo"
-              style={{height: '80px', marginBottom: '1.5rem'}}
-            />
-          </div>
+  const {siteConfig} = useDocusaurusContext();
+  const logoUrl = useBaseUrl('/img/logo.png');
 
-          <Heading as="h1" className="hero__title">
+  return (
+    <header className={styles.heroBanner}>
+      {/* Top half - Yellow with large logo */}
+      <div className={styles.heroTop}>
+        <div className={styles.heroLogo}>
+          <img
+            src={logoUrl}
+            alt="Enthusiast Logo"
+          />
+        </div>
+      </div>
+
+      {/* Bottom half - Black with content */}
+      <div className={styles.heroBottom}>
+        <div className="container">
+          <h1 className={styles.heroTitle}>
             {siteConfig.title}
-          </Heading>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          </h1>
+          <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <p className={styles.heroDescription}>
             A comprehensive guide to implementing RAG-powered AI agents for
             e-commerce workflows, with tutorials, examples, and best practices.
@@ -44,9 +48,10 @@ function HomepageHeader() {
             </Link>
           </div>
         </div>
-      </header>
-    );
-  }
+      </div>
+    </header>
+  );
+}
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
