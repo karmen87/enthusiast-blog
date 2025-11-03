@@ -25,6 +25,9 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/enthusiast-blog/',
 
+  // Trailing slash behavior for GitHub Pages
+  trailingSlash: false,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'karmen87', // Usually your GitHub org/user name.
