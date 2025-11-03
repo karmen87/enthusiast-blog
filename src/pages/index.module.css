@@ -3,15 +3,15 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #fbbf24 0%, #eab308 50%, #18181b 50%, #18181b 100%);
+  background: linear-gradient(180deg, #fac61b 0%, #fac61b 50%, #18181b 50%, #18181b 100%);
   min-height: 600px;
   display: flex;
   flex-direction: column;
 }
 
-/* Top half - Yellow with logo and content */
+/* Top half - Yellow with logo and content - EXACT logo yellow */
 .heroTop {
-  background: linear-gradient(135deg, #fbbf24 0%, #eab308 100%);
+  background: #fac61b;
   padding: 3rem 2rem 4rem;
   flex: 1;
   display: flex;
@@ -109,13 +109,13 @@
 
 /* Get Started button - Yellow with BLACK BORDER */
 .buttons .button--secondary {
-  background-color: #eab308;
+  background-color: #fac61b;
   border: 2px solid #18181b;
   color: #18181b;
 }
 
 .buttons .button--secondary:hover {
-  background-color: #fbbf24;
+  background-color: #fbd04f;
   border-color: #18181b;
   color: #18181b;
 }
@@ -129,5 +129,5 @@
 
 .buttons .button--outline:hover {
   background-color: #18181b;
-  color: #fbbf24;
+  color: #fac61b;
 }
