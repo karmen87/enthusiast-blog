@@ -1,21 +1,24 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
+    const logoUrl = useBaseUrl('/img/logo.png');
     return (
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           {/* Add logo */}
           <div className={styles.heroLogo}>
-            <img 
-              src="/img/logo.png" 
-              alt="Enthusiast Logo" 
+            <img
+              src={logoUrl}
+              alt="Enthusiast Logo"
               style={{height: '80px', marginBottom: '1.5rem'}}
             />
           </div>
@@ -52,6 +55,9 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="Open-source AI framework for e-commerce workflows">
       <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
     </Layout>
   );
 }
