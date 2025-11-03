@@ -1,19 +1,44 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+ai:
+  label: 'Artificial Intelligence'
+  permalink: '/ai'
+  description: 'Posts about AI, machine learning, and LLM applications in e-commerce'
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+ecommerce:
+  label: 'E-Commerce'
+  permalink: '/ecommerce'
+  description: 'E-commerce platform integration, product catalogs, and workflows'
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+opensource:
+  label: 'Open Source'
+  permalink: '/opensource'
+  description: 'Open source tools, libraries, and community contributions'
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+developer:
+  label: 'Developer Tools'
+  permalink: '/developer'
+  description: 'Developer guides, APIs, and technical tutorials'
+
+rag:
+  label: 'RAG (Retrieval-Augmented Generation)'
+  permalink: '/rag'
+  description: 'Retrieval-augmented generation techniques and best practices'
+
+vector-search:
+  label: 'Vector Search'
+  permalink: '/vector-search'
+  description: 'Vector databases, embeddings, and semantic search'
+
+tutorials:
+  label: 'Tutorials'
+  permalink: '/tutorials'
+  description: 'Step-by-step guides and hands-on tutorials'
+
+docker:
+  label: 'Docker'
+  permalink: '/docker'
+  description: 'Docker containerization, deployment, and orchestration'
+
+getting-started:
+  label: 'Getting Started'
+  permalink: '/getting-started'
+  description: 'Beginner-friendly setup and installation guides'

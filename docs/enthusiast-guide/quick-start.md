@@ -3,24 +3,57 @@ sidebar_position: 1
 sidebar_label: 'Quick Start'
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Quick Start: Get a Local Instance Running
 
 Get your local Enthusiast development environment running in under 5 minutes.
 
 ## Prerequisites
 
+:::warning System Requirements
+Make sure you have at least 4GB of RAM available for Docker containers.
+:::
+
 Before you begin, make sure you have:
 - [Docker](https://www.docker.com/get-started) installed and running
 - [Git](https://git-scm.com/) installed
+
+:::note
+If you're on Windows, we recommend using WSL2 for better Docker performance.
+:::
 
 ## Installation Steps
 
 ### 1. Clone the Repository
 
+<Tabs>
+  <TabItem value="https" label="HTTPS" default>
+
 ```bash
 git clone https://github.com/upsidelab/enthusiast.git
 cd enthusiast
 ```
+
+  </TabItem>
+  <TabItem value="ssh" label="SSH">
+
+```bash
+git clone git@github.com:upsidelab/enthusiast.git
+cd enthusiast
+```
+
+  </TabItem>
+  <TabItem value="gh" label="GitHub CLI">
+
+```bash
+gh repo clone upsidelab/enthusiast
+cd enthusiast
+```
+
+  </TabItem>
+</Tabs>
 
 ### 2. Start with Docker Compose
 

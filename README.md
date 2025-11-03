@@ -1,41 +1,74 @@
-# Website
+# Enthusiast Documentation - Technical Writing Sample
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+A Docusaurus-based documentation site showcasing technical writing capabilities through documentation for Enthusiast, an open-source AI framework for e-commerce.
 
-## Installation
+## 📝 Portfolio Context
 
-```bash
-yarn
+This project demonstrates my ability to:
+- **Structure technical documentation** using modern static site generators
+- **Write for developer audiences** with clear, concise explanations
+- **Use documentation tools** (Docusaurus 3.9, React, MDX, Git)
+- **Create multiple content types** (tutorials, guides, blog posts)
+- **Apply information architecture** principles for documentation organization
+
+## 🎯 Project Purpose
+
+Originally created as an interview demonstration, this site showcases:
+- Migration of technical content (from dev.to blog to Docusaurus)
+- Documentation site setup and configuration
+- Visual design and UX for developer documentation
+- Modern documentation patterns (admonitions, code tabs, syntax highlighting)
+
+**Note:** The Enthusiast framework has comprehensive [official documentation](https://upsidelab.io/tools/enthusiast/docs/). This site focuses on demonstrating Docusaurus proficiency and technical writing skills rather than duplicating that content.
+
+## 🛠️ Technical Stack
+
+- **Framework:** Docusaurus 3.9.2
+- **Frontend:** React 19, MDX
+- **Styling:** CSS Modules + Infima + custom theming
+- **Icons:** React Icons library
+- **Version Control:** Git
+- **Deployment:** GitHub Pages ready
+
+## 📂 Content Organization
+
+```
+├── docs/               # Product documentation (intro + quick start guide)
+├── blog/               # Technical blog posts
+├── src/
+│   ├── components/     # Custom React components (Homepage features)
+│   ├── pages/          # Custom pages (landing page)
+│   └── css/            # Custom theming (purple gradient design)
+└── static/img/         # Static assets
 ```
 
-## Local Development
+## 🎨 Design Decisions
+
+- **Color scheme:** Purple gradient theme (AI/tech-forward vs. default gray)
+- **Typography:** Balanced for readability on documentation-heavy pages
+- **Icons:** React Icons for scalable, modern UI
+- **Layout:** Mobile-responsive with Infima CSS framework
+
+## 🚀 Local Development
 
 ```bash
-yarn start
+npm install
+npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+View at `http://localhost:3000`
 
-## Build
+## 👤 About the Author
 
-```bash
-yarn build
-```
+**Karmen Kardum** - Software Engineer & Technical Writer
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- [Portfolio](https://karmen87.github.io/)
+- [LinkedIn](https://www.linkedin.com/in/karmen-kardum/)
+- [GitHub](https://github.com/karmen87)
 
-## Deployment
+---
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+**Original Enthusiast Framework:**
+- [Official Site](https://upsidelab.io/tools/enthusiast)
+- [GitHub Repository](https://github.com/upsidelab/enthusiast)
+- [Comprehensive Docs](https://upsidelab.io/tools/enthusiast/docs/)

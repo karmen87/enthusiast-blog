@@ -1,53 +1,55 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { FaBrain, FaShoppingCart, FaServer } from 'react-icons/fa'; // ADD THIS LINE
 
 const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
+    {
+      title: 'RAG-Powered AI Agents',
+      Icon: FaBrain,  // Changed from Svg
+      description: (
+        <>
+          Built-in retrieval-augmented generation combines vector search with
+          LLM capabilities to ground responses in your actual product catalog
+          and documentation.
+        </>
+      ),
+    },
+    {
+      title: 'E-Commerce Ready',
+      Icon: FaShoppingCart,  // Changed from Svg
+      description: (
+        <>
+          Pre-built connectors for PIM, CMS, and Shopify. Start indexing your
+          product data in minutes with <code>docker-compose up</code>.
+        </>
+      ),
+    },
+    {
+      title: 'Self-Hosted & Flexible',
+      Icon: FaServer,  // Changed from Svg
+      description: (
+        <>
+          Deploy with your choice of LLM providers—OpenAI, Mistral, LLaMA, or
+          Deepseek. Keep sensitive product data on-premises with full control.
+        </>
+      ),
+    },
+  ];
 
-function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+function Feature({Icon, title, description}) {  // Changed Svg to Icon
+    return (
+      <div className={clsx('col col--4')}>
+        <div className="text--center">
+          <Icon className={styles.featureSvg} style={{fontSize: '5rem'}} />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3">{title}</Heading>
+          <p>{description}</p>
+        </div>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
+    );
+  }
 
 export default function HomepageFeatures() {
   return (

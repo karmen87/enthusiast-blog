@@ -10,13 +10,21 @@ If you want to attach RAG-powered agents to product catalogs, customer support f
 
 ## What is Enthusiast?
 
-Enthusiast combines:
-- **Retrieval-Augmented Generation (RAG)** with vector search capabilities
-- **Layered validation** to reduce AI hallucinations
-- **Pre-built e-commerce connectors** for PIM/CMS/Shopify integration
-- Support for both **cloud-based and self-hosted** language models
-- **Python/Django backend** with React frontend
+  :::info Framework Overview
+  Enthusiast is a production-ready agentic AI framework specifically designed for e-commerce environments.
+  :::
 
+  Enthusiast combines:
+  - **Retrieval-Augmented Generation (RAG)** with vector search capabilities
+  - **Layered validation** to reduce AI hallucinations
+  - **Pre-built e-commerce connectors** for PIM/CMS/Shopify integration
+  - Support for both **cloud-based and self-hosted** language models
+  - **Python/Django backend** with React frontend
+
+  :::tip Why Choose Enthusiast?
+  Unlike general-purpose AI frameworks, Enthusiast is optimized for product catalogs, customer support, and e-commerce workflows out of the box.
+  :::
+  
 ## Key Features
 
 ### RAG + Vector Index
