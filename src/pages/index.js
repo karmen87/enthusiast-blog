@@ -14,19 +14,16 @@ function HomepageHeader() {
 
   return (
     <header className={styles.heroBanner}>
-      {/* Top half - Yellow with large logo */}
+      {/* Top half - Yellow with logo and ALL content */}
       <div className={styles.heroTop}>
-        <div className={styles.heroLogo}>
-          <img
-            src={logoUrl}
-            alt="Enthusiast Logo"
-          />
-        </div>
-      </div>
-
-      {/* Bottom half - Black with content */}
-      <div className={styles.heroBottom}>
         <div className="container">
+          <div className={styles.heroLogo}>
+            <img
+              src={logoUrl}
+              alt="Enthusiast Logo"
+            />
+          </div>
+
           <h1 className={styles.heroTitle}>
             {siteConfig.title}
           </h1>
@@ -49,6 +46,9 @@ function HomepageHeader() {
           </div>
         </div>
       </div>
+
+      {/* Bottom half - Black background for features */}
+      <div className={styles.heroBottom}></div>
     </header>
   );
 }

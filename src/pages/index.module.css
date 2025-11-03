@@ -3,62 +3,63 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: #18181b;
+  background: linear-gradient(180deg, #fbbf24 0%, #eab308 50%, #18181b 50%, #18181b 100%);
   min-height: 600px;
   display: flex;
   flex-direction: column;
 }
 
-/* Top half - Yellow with logo */
+/* Top half - Yellow with logo and content */
 .heroTop {
   background: linear-gradient(135deg, #fbbf24 0%, #eab308 100%);
-  padding: 3rem 0;
+  padding: 3rem 2rem 4rem;
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-/* Large logo styling */
+/* Logo styling - smaller */
 .heroLogo {
-  max-width: 400px;
+  max-width: 200px;
   width: 100%;
-  padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
 .heroLogo img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
 }
 
-/* Bottom half - Black with content */
-.heroBottom {
-  background: #18181b;
-  padding: 3rem 0 4rem;
-  color: white;
-}
-
+/* Text in yellow section - BLACK and DARK GREY */
 .heroTitle {
-  color: #fbbf24;
+  color: #18181b;
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
 .heroSubtitle {
-  color: #fde68a;
+  color: #3f3f46;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .heroDescription {
-  color: #d4d4d8;
+  color: #52525b;
   font-size: 1.1rem;
   margin: 1rem auto 2rem;
   max-width: 600px;
-  padding: 0 1rem;
+}
+
+/* Bottom half - Black for features */
+.heroBottom {
+  background: #18181b;
+  padding: 0;
+  flex: 1;
 }
 
 @media screen and (max-width: 996px) {
@@ -67,15 +68,12 @@
   }
 
   .heroTop {
-    padding: 2rem 0;
-  }
-
-  .heroBottom {
-    padding: 2rem 0 3rem;
+    padding: 2rem 1rem 3rem;
   }
 
   .heroLogo {
-    max-width: 250px;
+    max-width: 150px;
+    margin-bottom: 1.5rem;
   }
 
   .heroTitle {
@@ -84,6 +82,10 @@
 
   .heroSubtitle {
     font-size: 1.2rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
   }
 }
 
@@ -101,26 +103,27 @@
   font-weight: 600;
 }
 
-/* Override default button styles for yellow/black theme */
+/* Get Started button - Yellow with BLACK BORDER */
 .buttons .button--secondary {
   background-color: #eab308;
-  border-color: #eab308;
+  border: 2px solid #18181b;
   color: #18181b;
 }
 
 .buttons .button--secondary:hover {
   background-color: #fbbf24;
-  border-color: #fbbf24;
+  border-color: #18181b;
   color: #18181b;
 }
 
+/* Read the Blog button - Outlined */
 .buttons .button--outline {
   background-color: transparent;
-  border: 2px solid #eab308;
-  color: #eab308;
+  border: 2px solid #18181b;
+  color: #18181b;
 }
 
 .buttons .button--outline:hover {
-  background-color: #eab308;
-  color: #18181b;
+  background-color: #18181b;
+  color: #fbbf24;
 }
