@@ -1,43 +1,38 @@
-/* Simple, clean hero - like professional docs */
 .heroBanner {
-  padding: 4rem 2rem;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #fef3c7 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #06b6d4 100%);
+  color: white;
 }
 
-.heroLogo {
-  max-width: 200px;
-  margin: 0 auto 2rem;
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #075985 0%, #0284c7 50%, #0891b2 100%);
 }
 
-.heroLogo img {
-  width: 100%;
-  height: auto;
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
 }
 
-.heroTitle {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #111827;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+.heroBanner h1,
+.heroBanner p {
+  position: relative;
+  z-index: 1;
+  color: white;
 }
 
-.heroSubtitle {
-  font-size: 1.5rem;
-  color: #6b7280;
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
-
-.heroDescription {
-  font-size: 1.1rem;
-  color: #4b5563;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
 }
 
 .buttons {
@@ -51,54 +46,4 @@
 
 .buttons .button {
   min-width: 160px;
-  font-weight: 600;
-  border-radius: 6px;
-}
-
-/* Clean yellow button */
-.buttons .button--secondary {
-  background-color: #fbbf24;
-  border-color: #fbbf24;
-  color: #1f2937;
-}
-
-.buttons .button--secondary:hover {
-  background-color: #f59e0b;
-  border-color: #f59e0b;
-  color: #1f2937;
-}
-
-/* Clean outlined button */
-.buttons .button--outline {
-  background-color: transparent;
-  border: 2px solid #d1d5db;
-  color: #374151;
-}
-
-.buttons .button--outline:hover {
-  background-color: #f3f4f6;
-  border-color: #9ca3af;
-  color: #1f2937;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 3rem 1rem;
-  }
-
-  .heroLogo {
-    max-width: 150px;
-  }
-
-  .heroTitle {
-    font-size: 2.5rem;
-  }
-
-  .heroSubtitle {
-    font-size: 1.2rem;
-  }
-
-  .heroDescription {
-    font-size: 1rem;
-  }
 }

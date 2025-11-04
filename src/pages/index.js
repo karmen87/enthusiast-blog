@@ -11,21 +11,22 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   const logoUrl = useBaseUrl('/img/logo.png');
-
   return (
-    <header className={styles.heroBanner}>
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        {/* Add logo */}
         <div className={styles.heroLogo}>
           <img
             src={logoUrl}
             alt="Enthusiast Logo"
+            style={{height: '80px', marginBottom: '1.5rem'}}
           />
         </div>
 
-        <Heading as="h1" className={styles.heroTitle}>
+        <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className={styles.heroDescription}>
           A comprehensive guide to implementing RAG-powered AI agents for
           e-commerce workflows, with tutorials, examples, and best practices.
