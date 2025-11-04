@@ -23,9 +23,14 @@
 }
 
 .heroBanner h1,
-.heroBanner p {
+.heroBanner p,
+.heroBanner .buttons {
   position: relative;
   z-index: 1;
+}
+
+.heroBanner h1,
+.heroBanner p {
   color: white;
 }
 
