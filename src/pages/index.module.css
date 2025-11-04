@@ -1,94 +1,43 @@
+/* Simple, clean hero - like professional docs */
 .heroBanner {
-  padding: 0;
+  padding: 4rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #FAC61B 0%, #FAC61B 50%, #000000 50%, #000000 100%);
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(180deg, #fef3c7 0%, #ffffff 100%);
 }
 
-/* Top half - Yellow (#FAC61B) with logo and content */
-.heroTop {
-  background: #FAC61B;
-  padding: 3rem 2rem 4rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-/* Logo styling - RESTORED TO ORIGINAL LARGER SIZE */
 .heroLogo {
-  max-width: 400px;
-  width: 100%;
+  max-width: 200px;
   margin: 0 auto 2rem;
-  display: block;
 }
 
 .heroLogo img {
   width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
-/* Text in yellow section - BLACK and DARK GREY */
 .heroTitle {
-  color: #000000;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
+  color: #111827;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .heroSubtitle {
-  color: #3E4050;
   font-size: 1.5rem;
+  color: #6b7280;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .heroDescription {
-  color: #0F208C;
   font-size: 1.1rem;
-  margin: 1rem auto 2rem;
+  color: #4b5563;
   max-width: 600px;
-}
-
-/* Bottom half - Black background for features */
-.heroBottom {
-  background: #000000;
-  padding: 0;
-  flex: 1;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    min-height: 500px;
-  }
-
-  .heroTop {
-    padding: 2rem 1rem 3rem;
-  }
-
-  .heroLogo {
-    max-width: 250px;
-    margin-bottom: 1.5rem;
-  }
-
-  .heroTitle {
-    font-size: 2rem;
-  }
-
-  .heroSubtitle {
-    font-size: 1.2rem;
-  }
-
-  .heroDescription {
-    font-size: 1rem;
-  }
+  margin: 0 auto 2rem;
+  line-height: 1.6;
 }
 
 .buttons {
@@ -103,29 +52,53 @@
 .buttons .button {
   min-width: 160px;
   font-weight: 600;
+  border-radius: 6px;
 }
 
-/* Get Started button - Yellow with BLACK BORDER */
+/* Clean yellow button */
 .buttons .button--secondary {
-  background-color: #FAC61B;
-  border: 2px solid #000000;
-  color: #000000;
+  background-color: #fbbf24;
+  border-color: #fbbf24;
+  color: #1f2937;
 }
 
 .buttons .button--secondary:hover {
-  background-color: #FFE89C;
-  border-color: #000000;
-  color: #000000;
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  color: #1f2937;
 }
 
-/* Read the Blog button - Outlined */
+/* Clean outlined button */
 .buttons .button--outline {
   background-color: transparent;
-  border: 2px solid #000000;
-  color: #000000;
+  border: 2px solid #d1d5db;
+  color: #374151;
 }
 
 .buttons .button--outline:hover {
-  background-color: #000000;
-  color: #FAC61B;
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+  color: #1f2937;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+
+  .heroLogo {
+    max-width: 150px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
 }

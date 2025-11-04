@@ -14,41 +14,35 @@ function HomepageHeader() {
 
   return (
     <header className={styles.heroBanner}>
-      {/* Top half - Yellow with logo and ALL content */}
-      <div className={styles.heroTop}>
-        <div className="container">
-          <div className={styles.heroLogo}>
-            <img
-              src={logoUrl}
-              alt="Enthusiast Logo"
-            />
-          </div>
+      <div className="container">
+        <div className={styles.heroLogo}>
+          <img
+            src={logoUrl}
+            alt="Enthusiast Logo"
+          />
+        </div>
 
-          <h1 className={styles.heroTitle}>
-            {siteConfig.title}
-          </h1>
-          <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
-          <p className={styles.heroDescription}>
-            A comprehensive guide to implementing RAG-powered AI agents for
-            e-commerce workflows, with tutorials, examples, and best practices.
-          </p>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to={useBaseUrl('/docs/intro')}>
-              Get Started →
-            </Link>
-            <Link
-              className="button button--outline button--secondary button--lg"
-              to={useBaseUrl('/blog')}>
-              Read the Blog
-            </Link>
-          </div>
+        <Heading as="h1" className={styles.heroTitle}>
+          {siteConfig.title}
+        </Heading>
+        <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
+        <p className={styles.heroDescription}>
+          A comprehensive guide to implementing RAG-powered AI agents for
+          e-commerce workflows, with tutorials, examples, and best practices.
+        </p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to={useBaseUrl('/docs/intro')}>
+            Get Started →
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            to={useBaseUrl('/blog')}>
+            Read the Blog
+          </Link>
         </div>
       </div>
-
-      {/* Bottom half - Black background for features */}
-      <div className={styles.heroBottom}></div>
     </header>
   );
 }
