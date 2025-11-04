@@ -3,15 +3,15 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #fbbf24 0%, #eab308 50%, #18181b 50%, #18181b 100%);
+  background: linear-gradient(180deg, #FAC61B 0%, #FAC61B 50%, #000000 50%, #000000 100%);
   min-height: 600px;
   display: flex;
   flex-direction: column;
 }
 
-/* Top half - Yellow with logo and content */
+/* Top half - Yellow (#FAC61B) with logo and content */
 .heroTop {
-  background: linear-gradient(135deg, #fbbf24 0%, #eab308 100%);
+  background: #FAC61B;
   padding: 3rem 2rem 4rem;
   flex: 1;
   display: flex;
@@ -21,9 +21,9 @@
   position: relative;
 }
 
-/* Logo styling - smaller and centered */
+/* Logo styling - RESTORED TO ORIGINAL LARGER SIZE */
 .heroLogo {
-  max-width: 200px;
+  max-width: 400px;
   width: 100%;
   margin: 0 auto 2rem;
   display: block;
@@ -34,34 +34,32 @@
   height: auto;
   display: block;
   margin: 0 auto;
-  /* Try to blend logo background with page background */
-  mix-blend-mode: multiply;
 }
 
 /* Text in yellow section - BLACK and DARK GREY */
 .heroTitle {
-  color: #18181b;
+  color: #000000;
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
 .heroSubtitle {
-  color: #3f3f46;
+  color: #3E4050;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .heroDescription {
-  color: #52525b;
+  color: #0F208C;
   font-size: 1.1rem;
   margin: 1rem auto 2rem;
   max-width: 600px;
 }
 
-/* Bottom half - Black for features */
+/* Bottom half - Black background for features */
 .heroBottom {
-  background: #18181b;
+  background: #000000;
   padding: 0;
   flex: 1;
 }
@@ -76,7 +74,7 @@
   }
 
   .heroLogo {
-    max-width: 150px;
+    max-width: 250px;
     margin-bottom: 1.5rem;
   }
 
@@ -109,25 +107,25 @@
 
 /* Get Started button - Yellow with BLACK BORDER */
 .buttons .button--secondary {
-  background-color: #eab308;
-  border: 2px solid #18181b;
-  color: #18181b;
+  background-color: #FAC61B;
+  border: 2px solid #000000;
+  color: #000000;
 }
 
 .buttons .button--secondary:hover {
-  background-color: #fbbf24;
-  border-color: #18181b;
-  color: #18181b;
+  background-color: #FFE89C;
+  border-color: #000000;
+  color: #000000;
 }
 
 /* Read the Blog button - Outlined */
 .buttons .button--outline {
   background-color: transparent;
-  border: 2px solid #18181b;
-  color: #18181b;
+  border: 2px solid #000000;
+  color: #000000;
 }
 
 .buttons .button--outline:hover {
-  background-color: #18181b;
-  color: #fbbf24;
+  background-color: #000000;
+  color: #FAC61B;
 }

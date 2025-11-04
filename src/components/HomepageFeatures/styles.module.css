@@ -3,13 +3,13 @@
   align-items: center;
   padding: 4rem 0;
   width: 100%;
-  background-color: #18181b;
-  color: #ffffff;
+  background-color: #000000;
+  color: #FFE89C;
 }
 
 .featureSvg {
     height: 80px;
     width: 80px;
-    color: var(--ifm-color-primary);
+    color: #FAC61B;
     margin-bottom: 1rem;
   }
