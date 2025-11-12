@@ -8,7 +8,14 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(git revert:*)",
-      "WebFetch(domain:karmen87.github.io)"
+      "WebFetch(domain:karmen87.github.io)",
+      "WebFetch(domain:github.com)",
+      "Bash(npx playwright install:*)",
+      "Bash(npm install:*)",
+      "Bash(node screenshot.js:*)",
+      "Bash(node resize-thumbnails.js:*)",
+      "Bash(node screenshot-userguide.js:*)",
+      "Bash(node screenshot-devto.js:*)"
     ],
     "deny": [],
     "ask": []
