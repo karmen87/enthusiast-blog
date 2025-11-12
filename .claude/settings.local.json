@@ -15,7 +15,8 @@
       "Bash(node screenshot.js:*)",
       "Bash(node resize-thumbnails.js:*)",
       "Bash(node screenshot-userguide.js:*)",
-      "Bash(node screenshot-devto.js:*)"
+      "Bash(node screenshot-devto.js:*)",
+      "Bash(gh run:*)"
     ],
     "deny": [],
     "ask": []
